@@ -1,0 +1,12 @@
+﻿@model MvcApp1.ViewModels.ListViewModel
+
+@{    
+    ViewBag.Title = "Products";
+}
+
+@Html.Partial("ListProducts", Model.Products)
+
+<br />
+<div id="total">Total value is $@Model.TotalPrice</div>
+
+

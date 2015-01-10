@@ -1,0 +1,19 @@
+﻿@{
+    //Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header">@ViewBag.Title</div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

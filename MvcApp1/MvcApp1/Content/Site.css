@@ -1,0 +1,6 @@
+﻿BODY { font-family: Cambria, Georgia, "Times New Roman"; margin: 0; }
+DIV#header { background-color: gray; border-bottom: 2px solid #111; color: White; }
+DIV#content { border-left: 2px solid gray; margin-left: 9em; padding: 1em; }
+DIV.item { border-bottom: 1px dotted gray; padding-top: .7em; margin-bottom: .7em; }
+DIV.item:first-child { border-top:none; padding-top: 1.0em; }
+DIV#total { background-color: gray; border-bottom: 2px solid #111; border-top: 2px double #b24f1c; color: White; }

@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Product>
+
+<div class="content">
+    @foreach (Product item in Model)
+    {
+        <div class="item">@item.Name @item.Category @item.Price</div>
+    }   
+</div>
+
