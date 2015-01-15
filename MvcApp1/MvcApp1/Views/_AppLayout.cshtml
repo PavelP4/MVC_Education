@@ -9,11 +9,22 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.1.3.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 </head>
 <body>
     <div id="header">@ViewBag.Title</div>
-    <div>
+    <div id="mainwork">
         @RenderBody()
     </div>
+    
+    @if (TempData["Message"] != null)
+    {
+        <div id="message">
+            <p class="title">Message:</p> @TempData["Message"]
+        </div>
+    }
+   
 </body>
 </html>

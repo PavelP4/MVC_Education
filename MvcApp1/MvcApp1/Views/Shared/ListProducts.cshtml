@@ -3,7 +3,7 @@
 <div class="content">
     @foreach (Product item in Model)
     {
-        <div class="item">@item.Name @item.Category @item.Price</div>
+        <div class="item">@item.ProductID @Html.ActionLink(item.Name, "Edit", new { item.ProductID }) @item.Category @item.Price</div>
     }   
 </div>
 

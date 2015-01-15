@@ -1,0 +1,24 @@
+﻿@model MvcApp1.Models.Product
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit [ID : @Model.ProductID] @Model.Name</h2>
+
+<div>
+    @Html.ValidationSummary()
+</div>
+
+<div>    
+    @using (Html.BeginForm())
+    {
+        @Html.EditorForModel();
+        <br />
+        <input type="submit" value="Save" />
+        @Html.ActionLink("Back", "List");
+    }
+</div>
+
+
+

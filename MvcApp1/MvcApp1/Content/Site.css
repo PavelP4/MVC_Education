@@ -3,4 +3,47 @@ DIV#header { background-color: gray; border-bottom: 2px solid #111; color: White
 DIV#content { border-left: 2px solid gray; margin-left: 9em; padding: 1em; }
 DIV.item { border-bottom: 1px dotted gray; padding-top: .7em; margin-bottom: .7em; }
 DIV.item:first-child { border-top:none; padding-top: 1.0em; }
-DIV#total { background-color: gray; border-bottom: 2px solid #111; border-top: 2px double #b24f1c; color: White; }
+DIV#total {
+    border-bottom: 2px solid #111;
+    border-top: 2px double #b24f1c;
+    color: #333333;
+    border-top-color: #999999;
+    border-bottom-color: #999999;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+DIV#mainwork {
+    margin: 40px;
+    padding: 20px;
+    border: 1px dotted #808080;
+    left: 100px;
+    background-color: #CCCCCC;
+}
+DIV#message {
+    border: thin double #009933;
+    background-color: #FFFFCC;
+    padding: 20px;
+    margin: 40px;
+}
+
+    DIV#message P.title {
+    font-weight: bold;
+    color: #006600;
+}
+.input-validation-error {
+    background-color: #FF9999;
+}
+.field-validation-error {
+    color: #FF0000;
+    font-family: 'Courier New' , Courier, monospace;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.validation-summary-errors {
+    background-color: #FFFFCC;
+    color: #FF0000;
+    border-style: solid;
+    width: 400px;
+}

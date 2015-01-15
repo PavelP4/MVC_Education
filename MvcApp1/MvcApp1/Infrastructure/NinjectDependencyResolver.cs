@@ -6,6 +6,8 @@ using Ninject.Parameters;
 using Ninject.Syntax;
 using System.Configuration;
 using MvcApp1.Models;
+using MvcApp1.Infrastructure.Abstract;
+using MvcApp1.Infrastructure.Concrete;
 
 namespace MvcApp1.Infrastructure
 {
@@ -33,6 +35,7 @@ namespace MvcApp1.Infrastructure
         private void AddBindings()
         {            
             kernel.Bind<IValueCalculator>().To<LinqValueCalculator>();
+            kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }
