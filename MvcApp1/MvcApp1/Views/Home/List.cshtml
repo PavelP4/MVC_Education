@@ -9,4 +9,12 @@
 <br />
 <div id="total">Total value is $@Model.TotalPrice</div>
 
+@section Footer { 
+    <p>Section footer's sample.</p> 
+
+    <div>
+        @Html.ActionLink("Link to Edit", "Edit", new { ProductID = 1})
+    </div>
+}
+
 
